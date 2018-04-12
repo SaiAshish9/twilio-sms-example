@@ -6,15 +6,15 @@ const twilio = require('twilio'),
 let client = new twilio(config.accountSid,config.authToken);
 
 client.messages.create({
-  to: 'Número que recibirá el SMS',
+  to: 'Your numberphone',
   from: '+17865902573', 
-  body: 'Nodejs + Express'
+  body: 'Message send from Nodejs + Express'
 }, (err, res) => {
 
   if (err) {
-    console.log(`Se ha generado el siguiente error: ${err}`);
+    console.log(`An error has ocurred: ${err}`);
   } else {
-    console.log(`¡SMS Enviado! Fecha:${res.dateCreated} Id: ${res.sid}`);
+    console.log(`¡SMS Success! Date:${res.dateCreated} Id: ${res.sid}`);
   }
 
 });
