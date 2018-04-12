@@ -5,4 +5,4 @@ const config = {
   authToken : 'Add your authToken'
 }
 
-module.exports = config;
+module.exports = config
