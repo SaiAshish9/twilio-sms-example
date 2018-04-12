@@ -14,10 +14,9 @@ client.messages.create({
   body: 'Message send from Nodejs + Express'
 }, (err, res) => {
 
-  if (err) {
+  if (err) 
     console.log(`An error has ocurred: ${err}`)
-  } else {
-    console.log(`¡SMS Success! Date:${res.dateCreated} Id: ${res.sid}`)
-  }
-
+  else 
+  console.log(`¡SMS Success! Date:${res.dateCreated} Id: ${res.sid}`)
+  
 })
